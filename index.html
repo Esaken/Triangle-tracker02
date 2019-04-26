@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Triangle-Tracker</title>
+     <link rel="icon" href="/home/kennedy/Documents/homework/assignment/images/download.jpeg" type="image.icon">
+  </head>
+  <body>
+    <h1>Properties of a triangle</h1>
+    <img src="/home/kennedy/Documents/homework/assignment/images/images.jpeg" alt="Triangle properties">
+
+    <p>Please input your variables in the text boxes below to check the property of your triangle</p>
+    <p>Input your values</p>
+    <form action="Triangle-tracker">
+      Side1:<br>
+    <input type="number" name="Side1" value="">
+            <br>
+      Side2:<br>
+        <input type="number" name="Side2" value="">
+            <br>
+      Side3:<br>
+    <input type="number" name="Side3" value=""
+            <br>
+  <button onclick="myFunction">click</button>
+</form>
+      <p id="click"></p>
+<p>If you click the "click" button, the data will be sent to determine the property of your triangle.</p>
+    <script>
+    function myFunction(){
+    var Side1 = parseInt(document.getElementById("Side1").value);
+    var Side2 = parseInt(document.getElementById("Side2").value);
+    var Side3 = parseInt(document.getElementById("Side3").value);
+          if ( (side1===side2 && side2===side3 && side1===side3)) {{
+            document.getElementById("click"),innerHTML="EQUILATERAL TRIANGLE";
+          }
+
+          }
+
+      }
+
+    </script>
+
+  </body>
+</html>
