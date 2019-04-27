@@ -1,0 +1,7 @@
+body{
+  background-color: pink;
+  background-image: image(images/download.jpeg);
+  color: red;
+  font-style: italic;
+  font-size: 35%;
+}
