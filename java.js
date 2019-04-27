@@ -16,5 +16,5 @@ if (Side1 + Side2 <= Side3 || Side1 + Side3 <= Side2 || Side2 + Side3 <= Side1){
       text = document.getElementById('result').innerHTML = "This is a right-angled triangle.";
     }
     else {
-      text = document.getElementById('result').innerHTML = "This is a scalene triangle.";
+      text = document.getElementById('result').innerHTML = "This is a scalene triangle." ;
     }
