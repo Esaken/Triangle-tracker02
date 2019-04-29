@@ -1,22 +1,22 @@
-function submit() {
-var Side1 = parseInt(documents.getElementById("Side1").value);
-var Side2 = parseInt(documents.getElementById("Side2").value);
-var Side3 = parseInt(documents.getElementById("Side3").value);
-if (Side1 + Side2 <= Side3 || Side1 + Side3 <= Side2 || Side2 + Side3 <= Side1){
-text = document.getElementById('result').innerHTML = "This is not a triangle!";
+function myFunction(){
+   var inputs = document.getElementsByClassName("triangle-value");
+   var Side1=parseInt(inputs[0].value);
+   var Side2=parseInt(inputs[1].value);
+   var Side3=parseInt(inputs[2].value);
+
+if(Side2 + Side1<=Side3 && Side3 + Side1<=Side2 && Side3 + Side2<=Side1){
+document.getElementById('result').innerHTML = "DOESNT QUALIFY TO BE A TRIANGLE";
 }
-else if (Side1 === Side2 && Side1 === Side3 && Side2 === Side3){
-text = document.getElementById('result').innerHTML = "This is an equilateral triangle";
+if(Side1<=0 && Side2<=0 &&  Side3<=0){
+      document.getElementById("result").innerText = "NOT A TRIANGLE";
+  }
+else if(Side1===Side2 && Side1===Side3 && Side3 ===Side2){
+document.getElementById('result').innerHTML = "THIS IS AN EQUILATERAL TRIANGLE";
 }
-else if (Side1 === Side2 || Side1 === Side3 || Side2 === Side3){
-text = document.getElementById('result').innerHTML = "This is an isosceles triangle";
+else if(Side2===Side1 || Side2===Side3 || Side3===Side1){
+  document.getElementById('result').innerHTML = "THIS IS AN ISOSCELES TRIANGLE";
 }
-else if (Side1**2 + Side2**2 === Side3**2){
-text = document.getElementById('result').innerHTML = "This is a right-angled triangle.";
+else if(Side2 + Side1>Side3 || Side3 + Side1>Side2 || Side3 + Side2>Side1){
+document.getElementById('result').innerHTML = "THIS IS A SCALENE TRIANGLE";
 }
-else if (Side1**2 + Side3**2 === Side2**2){
-text = document.getElementById('result').innerHTML = "This is a right-angled triangle.";
 }
-else {
-text = document.getElementById('result').innerHTML = "This is a scalene triangle." ;
-      }

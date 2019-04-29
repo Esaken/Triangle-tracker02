@@ -1,7 +1,39 @@
 body{
   background-color: pink;
   background-image: image(images/download.jpeg);
-  color: red;
+  color: green;
   font-style: italic;
-  font-size: 35%;
+  font-size: 145%;
+}
+
+.header{
+color:purple;
+text-shadow:skyblue 2px 5px;
+}
+.answer {
+ color: green;
+ font-style: italic;
+ }
+.DefReset {
+ color: Red;
+ font-style: italic;
+}
+.input  {
+ color: skyblue;
+ font-style: italic;
+}
+.Side1 {
+ color: pink;
+ font-style: italic;
+}
+.Side2 {
+ color: pink;
+ font-style: italic;
+}
+.Side3 {
+ color: pink
+
+}
+.instract {
+ color: skyblue
 }
